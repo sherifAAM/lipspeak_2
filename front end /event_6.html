@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Levels</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Title Section */
+    h1.course-title {
+      margin-top: 20px;
+      font-size: 36px;
+      color: #535ba0;
+      text-align: center;
+    }
+
+    /* Progress Bar Container */
+    .progress-bar-container {
+      width: 80%;
+      background-color: #ddd;
+      border-radius: 10px;
+      margin: 20px 0;
+      position: relative;
+      height: 20px;
+    }
+
+    .progress-bar {
+      width: 30%; /* Adjust this value to show progress */
+      height: 100%;
+      background-color: rgba(83, 91, 160, 1);
+      transition: width 0.5s ease-in-out;
+    }
+
+    .progress-percent {
+      position: absolute;
+      top: 25px;
+      left: 10px;
+      font-weight: bold;
+      color: #535ba0;
+      font-size: 18px;
+    }
+
+    /* Levels Grid */
+    section.levels {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* 6 columns */
+      gap: 15px;
+      padding: 20px;
+      width: 80%;
+      justify-items: center;
+    }
+
+    /* Level Buttons */
+    .level-button {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(83, 91, 160, 1); /* Purple color */
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      border-radius: 10px;
+      border: 2px solid #535ba0;
+      transition: transform 0.3s, background-color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .level-button:hover {
+      transform: scale(1.1);
+      background-color: rgba(83, 91, 160, 0.7);
+    }
+
+    .level-button.locked {
+      background-color: #999;
+      cursor: not-allowed;
+    }
+
+    .level-button.completed {
+      background-color: #4caf50;
+      border-color: #4caf50;
+    }
+
+    .level-button.locked:hover,
+    .level-button.completed:hover {
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Title Section -->
+  <h1 class="course-title">EVENT : MASTER</h1>
+
+  <!-- Progress Bar with Percentage -->
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="progress-percent">0%</div> <!-- Change this to the current progress percentage -->
+
+  <!-- Levels Section -->
+  <section class="levels">
+    <!-- Level Buttons -->
+    <a href="#" class="level-button locked">1</a>
+    <a href="#" class="level-button locked">2</a>
+    <a href="#" class="level-button locked">3</a>
+    <a href="#" class="level-button locked">4</a>
+    <a href="#" class="level-button locked">5</a>
+    <a href="#" class="level-button locked">6</a>
+    <a href="#" class="level-button locked">7</a>
+    <a href="#" class="level-button locked">8</a>
+    <a href="#" class="level-button locked">9</a>
+    <a href="#" class="level-button locked">10</a>
+    <a href="#" class="level-button locked">11</a>
+    <a href="#" class="level-button locked">12</a>
+    <a href="#" class="level-button locked">13</a>
+    <a href="#" class="level-button locked">14</a>
+    <a href="#" class="level-button locked">15</a>
+    <a href="#" class="level-button locked">16</a>
+    <a href="#" class="level-button locked">17</a>
+    <a href="#" class="level-button locked">18</a>
+    <a href="#" class="level-button locked">19</a>
+    <a href="#" class="level-button locked">20</a>
+    <a href="#" class="level-button locked">21</a>
+    <a href="#" class="level-button locked">22</a>
+    <a href="#" class="level-button locked">23</a>
+    <a href="#" class="level-button locked">24</a>
+    <a href="#" class="level-button locked">25</a>
+    <a href="#" class="level-button locked">26</a>
+    <a href="#" class="level-button locked">27</a>
+    <a href="#" class="level-button locked">28</a>
+    <a href="#" class="level-button locked">29</a>
+    <a href="#" class="level-button locked">30</a>
+  </section>
+</body>
+</html>
