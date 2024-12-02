@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENT 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 50px;
+    }
+
+    .level-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 50%;
+      margin: auto;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .level {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      border: 2px solid #ccc;
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 8px;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="level-container">
+    <div class="level">EVENT 1 TEST</div>
+
+    <div class="video-container">
+      <video width="100%" controls>
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <input type="text" id="userText" placeholder="Write here the text you get">
+
+    <br><br>
+    <button class="submit-btn" onclick="checkAnswer()">Check your answer</button>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      var userText = document.getElementById('userText').value;
+      if(userText) {
+        alert('You entered: ' + userText);
+      } else {
+        alert('Please enter some text!');
+      }
+    }
+  </script>
+</body>
+</html>

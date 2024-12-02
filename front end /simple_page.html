@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Events</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Full viewport height */
+    }
+
+    h1.section-title {
+      text-align: center;
+      font-size: 36px;
+      color: #535ba0;
+      margin-bottom: 40px;
+    }
+
+    /* Grid Container */
+    section.buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 30px;
+      justify-items: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+    }
+
+    /* Big Square Buttons */
+    .course-button {
+      position: relative;
+      width: 250px; /* Bigger size */
+      height: 250px; /* Bigger size */
+      border: 2px solid #535ba0;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.5s;
+      cursor: pointer;
+      background-color: rgba(83, 91, 160, 1);
+    }
+
+    .course-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s, filter 0.5s;
+    }
+
+    .course-button:hover img {
+      transform: scale(1.1); /* Zoom in on hover */
+      filter: brightness(70%);
+    }
+
+    .course-button span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px 0;
+      letter-spacing: 1px;
+    }
+
+    .course-button:hover span {
+      background-color: rgba(0, 0, 0, 0.8); /* Darker overlay on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Title -->
+  <h1 class="section-title">EVENTS</h1>
+
+  <!-- Courses Section -->
+  <section class="buttons">
+    <!-- EASY Button -->
+    <a href="event_1.html" class="course-button">
+      <!-- Replace 'images/easy-photo.jpg' with the path to your EASY photo -->
+      <img src="assets/images/event1.png" alt="Easy">
+      <span>Easy</span>
+    </a>
+    <!-- MEDIATOR Button -->
+    <a href="event_2.html" class="course-button">
+      <!-- Replace 'images/mediator-photo.jpg' with the path to your MEDIATOR photo -->
+      <img src="assets/images/event4.png" alt="Mediator">
+      <span>Mediator</span>
+    </a>
+    <!-- PROFESSIONAL Button -->
+    <a href="event_3.html" class="course-button">
+      <!-- Replace 'images/professional-photo.jpg' with the path to your PROFESSIONAL photo -->
+      <img src="assets/images/event2.png" alt="Professional">
+      <span>Professional</span>
+    </a>
+    <!-- STAR Button -->
+    <a href="event_4.html" class="course-button">
+      <!-- Replace 'images/star-photo.jpg' with the path to your STAR photo -->
+      <img src="assets/images/event5.png" alt="Star">
+      <span>Star</span>
+    </a>
+    <!-- HERO Button -->
+    <a href="event_5.html" class="course-button">
+      <!-- Replace 'images/hero-photo.jpg' with the path to your HERO photo -->
+      <img src="assets/images/event3.png" alt="Hero">
+      <span>Hero</span>
+    </a>
+    <!-- MASTER Button -->
+    <a href="event_6.html" class="course-button">
+      <!-- Replace 'images/master-photo.jpg' with the path to your MASTER photo -->
+      <img src="assets/images/event6.png" alt="Master">
+      <span>Master</span>
+    </a>
+  </section>
+</body>
+</html>
