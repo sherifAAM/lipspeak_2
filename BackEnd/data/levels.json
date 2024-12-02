@@ -1,0 +1,6 @@
+[
+    { "level": "Beginner", "lesson_number": 1, "content": "Introduction to lip reading", "is_test": false },
+    { "level": "Beginner", "lesson_number": 25, "content": "Beginner Test", "is_test": true },
+    { "level": "Mediator", "lesson_number": 1, "content": "Mediator Lesson 1", "is_test": false },
+    { "level": "Mediator", "lesson_number": 25, "content": "Mediator Test", "is_test": true }
+]
